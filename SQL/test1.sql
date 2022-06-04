@@ -1,5 +1,5 @@
 select * from perf 
-		where  ( patronymic in ('Leonidovich', 'Igorevich', 'Maksimovich','Valerevna', 'Dmitrievna', 'Arkadevna','Viktorovna', 'Andreevna')
+		where (patronymic in ('Leonidovich', 'Igorevich', 'Maksimovich','Valerevna', 'Dmitrievna', 'Arkadevna','Viktorovna', 'Andreevna')
 				or favorite_writer in ('Sergei Yesenin' , 'Leo Tolstoy' , 'Alexei Tolstoy' ,  'Anton Chekhov' ) and (age < 30 and age > 20) or (sexual_partners>3 and children < 2 )
 		and marrige_form = 'monogamy' and favorite_singer in ('Artik & Asti' , 'Twenty one pilots' ,'Egor Kreed' , 'feduc' , 'Valery Meladze')
 		or average_school_mark >= 3 and (smoking = true and drinking = true) and favorite_music = 'country'

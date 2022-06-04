@@ -1,4 +1,4 @@
-select * from perf
+select name, favorite_season, temperament from perf
 where ( name in ('Roman','Karina','Aleksey') or favorite_season = 'autumn') and (age < 60 and age > 50) or (sexual_partners>1 and children > 1 )
 and marrige_form = 'monogamy' and religion in ('christianity' , 'islam' , 'buddhism' , 'catholicism' , 'agnocism' )
 or average_school_mark >= 3 and (smoking = false and drinking = true) and ( favorite_animal in ('horse', 'beetle', 'dolphin','hamster', 'fox')
